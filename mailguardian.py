@@ -29,7 +29,6 @@ class MailGuardian:
             with SMTP(mx_exchange, self.smtp_port) as smtp:
                 smtp.ehlo(mx_exchange)
                 smtp.mail(self.sender)
-                smtp.rcpt(email)
                 response, _ = smtp.rcpt(email)
                 smtp.quit()
 
