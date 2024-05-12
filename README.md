@@ -18,7 +18,7 @@ MailGuardian is a best-effort email validation class written in Python. It ensur
   guardian = MailGuardian(sender='sender@example.com', smtp_port=25)
   
   # Attempt to validate an email address
-  is_valid = guardian.validate_email("user@example.com")
+  is_valid = guardian.validate_email('user@example.com')
 
   # Do something with the result
   print(f"The email address user@example.com is {'valid' if is_valid else 'invalid'}.")
